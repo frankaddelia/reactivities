@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[4.7.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.1, )"
@@ -253,6 +257,14 @@
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.6, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

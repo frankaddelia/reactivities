@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j7xpB2bOyqNe1A6T6P7p8vhQ1afbt59DLmNEvxDibqywUpq+ursmRocM2MjEMZSbEx6mJZo8SdFzh1BOmDA/QQ==",
+  "dgSpecHash": "WyxYhkkhCIUVszdE/npy00qDRFKX6TZdr8l5w3DdcqvR5ki8buEFnkpfgc5nlBK5A88x0iSNfiRvOOFkOhk4gQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fadde\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\fadde\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.6\\microsoft.data.sqlite.core.6.0.6.nupkg.sha512",

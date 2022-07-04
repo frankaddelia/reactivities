@@ -1235,6 +1235,7 @@
     "net6.0": [
       "Domain >= 1.0.0",
       "Microsoft.CSharp >= 4.7.0",
+      "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.6",
       "Swashbuckle.AspNetCore.Swagger >= 6.3.1"
     ]
@@ -1245,11 +1246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\fadde\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fadde\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1259,14 +1260,14 @@
         "net6.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Domain\\Domain.csproj"
+            "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Domain\\Domain.csproj"
             }
           }
         }
@@ -1284,6 +1285,10 @@
           "Microsoft.CSharp": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.6, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
