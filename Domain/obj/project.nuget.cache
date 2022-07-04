@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lG1VIndBorODrW1xi9ZXeWf4moZKVARLH1kjOinKV33zYQQ7ad+tfjKEHqz4I8aftEZHq3CSYUCP+ulabohGeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

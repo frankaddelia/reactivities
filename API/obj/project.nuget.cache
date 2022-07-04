@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "WnrCLqJjzKJ6cd3JwmX/oZy6f1IHgNodX2qSX4Ct+urB4HSyhdbmJZDYiCGEC6aUwAnHk4SzDkMv+BbPWgsqnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

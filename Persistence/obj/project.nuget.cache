@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OGCZZVoVZf1sFud48g/fHyyivRm6x9Js5CXZe1KDlZq3iP9QNUGBgpRp7YEJeXUsX8xJ6a0OrGHbPRD8Sm692Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fadde\\Projects\\Web\\udemy\\react-ts-csharp\\Reactivities\\Persistence\\Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fadde\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}
