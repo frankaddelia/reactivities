@@ -20,23 +20,13 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Activity>> GetActivity(Guid id)
         {
-            return await Mediator.Send(new Details.Query{Id = id});
+            return await Mediator.Send(new Details.Query { Id = id });
         }
 
-        // [HttpPost("create-activity")]
-        // public async Task<ActionResult<Activity>> CreateActivity([FromBody] Activity newActivity)
-        // {
-        //     try
-        //     {
-        //         await _context.Activities.AddAsync(newActivity);
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         Console.WriteLine("There was a problem creating a new action.", ex);
-        //     }
-
-        //     return NoContent();
-        // }
+        [HttpPost]
+        public async Task<IActionResult> CreateActivity(Activity newActivity)
+        {
+            return Ok(await Mediator.Send(new Create.Command { Activity = newActivity }));
+        }
     }
 }
