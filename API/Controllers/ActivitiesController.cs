@@ -28,5 +28,21 @@ namespace API.Controllers
         {
             return await _context.Activities.FindAsync(id);
         }
+
+        [HttpPost("create-activity")]
+        public async Task<ActionResult<Activity>> CreateActivity([FromBody] Activity newActivity)
+        {
+            try 
+            {
+                await _context.Activities.AddAsync(newActivity);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("There was a problem creating a new action.", ex);
+            }
+
+            return NoContent();
+        }
     }
 }
