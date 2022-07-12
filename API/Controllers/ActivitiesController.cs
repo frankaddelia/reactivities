@@ -32,7 +32,7 @@ namespace API.Controllers
         [HttpPost("create-activity")]
         public async Task<ActionResult<Activity>> CreateActivity([FromBody] Activity newActivity)
         {
-            try 
+            try
             {
                 await _context.Activities.AddAsync(newActivity);
                 await _context.SaveChangesAsync();
