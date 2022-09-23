@@ -2,6 +2,7 @@ using System;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace Infrastructure.Security
@@ -39,7 +40,10 @@ namespace Infrastructure.Security
         .ToString()
       );
 
-      var attendee = _dbContext.ActivityAttendees.FindAsync(userId, activityId).Result;
+      var attendee = _dbContext.ActivityAttendees
+        .AsNoTracking()
+        .SingleOrDefaultAsync(x => x.AppUserId == userId && x.ActivityId == activityId)
+        .Result;
 
       if (attendee == null)
       {
