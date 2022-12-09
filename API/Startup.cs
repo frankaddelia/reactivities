@@ -66,6 +66,9 @@ namespace API
 
       app.UseRouting();
 
+      app.UseDefaultFiles();
+      app.UseStaticFiles();
+
       app.UseCors("CorsPolicy");
 
       // authentication MUST happen first!
@@ -76,6 +79,7 @@ namespace API
       {
         endpoints.MapControllers();
         endpoints.MapHub<ChatHub>("/chat");
+        endpoints.MapFallbackToController("Index", "Fallback");
       });
     }
   }
