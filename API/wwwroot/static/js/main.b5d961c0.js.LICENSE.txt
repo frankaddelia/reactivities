@@ -11,13 +11,13 @@
 */
 
 /*!
- * Cropper.js v1.5.12
+ * Cropper.js v1.5.13
  * https://fengyuanchen.github.io/cropperjs
  *
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2021-06-12T08:00:17.411Z
+ * Date: 2022-11-20T05:30:46.114Z
  */
 
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
@@ -63,7 +63,7 @@
  */
 
 /**
- * React Router DOM v6.3.0
+ * @remix-run/router v1.6.0
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -74,7 +74,18 @@
  */
 
 /**
- * React Router v6.3.0
+ * React Router DOM v6.11.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.11.0
  *
  * Copyright (c) Remix Software Inc.
  *

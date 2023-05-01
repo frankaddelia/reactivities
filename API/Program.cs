@@ -1,43 +1,62 @@
+using API.Extensions;
+using API.Middleware;
+using API.SignalR;
 using Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace API
+var builder = WebApplication.CreateBuilder(args);
+
+// add services to the container
+builder.Services.AddControllers(opt =>
 {
-  public class Program
-  {
-    public static async Task Main(string[] args)
-    {
-      AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+  var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+  opt.Filters.Add(new AuthorizeFilter(policy));
+});
+builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddIdentityServices(builder.Configuration);
 
-      var host = CreateHostBuilder(args).Build();
 
-      using var scope = host.Services.CreateScope();
+// Configure the HTTP request pipeline
+var app = builder.Build();
 
-      var services = scope.ServiceProvider;
+app.UseMiddleware<ExceptionMiddleware>();
 
-      try
-      {
-        var context = services.GetRequiredService<DataContext>();
-        var userManager = services.GetRequiredService<UserManager<AppUser>>();
-        await context.Database.MigrateAsync();
-        await Seed.SeedData(context, userManager);
-      }
-      catch (Exception ex)
-      {
-        var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occured during migration");
-      }
-
-      await host.RunAsync();
-    }
-
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-              webBuilder.UseStartup<Startup>();
-            });
-  }
+if (builder.Environment.IsDevelopment())
+{
+  app.UseSwagger();
+  app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
 }
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+app.UseCors("CorsPolicy");
+
+// authentication MUST happen first!
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
+app.MapHub<ChatHub>("/chat");
+
+using var scope = app.Services.CreateScope();
+var services = scope.ServiceProvider;
+
+try
+{
+  var context = services.GetRequiredService<DataContext>();
+  var userManager = services.GetRequiredService<UserManager<AppUser>>();
+  await context.Database.MigrateAsync();
+  await Seed.SeedData(context, userManager);
+}
+catch (Exception ex)
+{
+  var logger = services.GetRequiredService<ILogger<Program>>();
+  logger.LogError(ex, "An error occured during migration");
+}
+
+app.Run();
